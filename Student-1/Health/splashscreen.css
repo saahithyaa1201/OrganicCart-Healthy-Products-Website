@@ -1,0 +1,85 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+    background-image: url('pictures/front.jpeg');
+    background-size: 1600px 900px; /* Set the specific size for the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Center the background image */
+}
+
+.editor a {
+    background-color: #4d7845;
+    color: white;
+    padding: 11px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.editor a:hover, a:active {
+    background-color: #3a5a40;
+}
+
+.splash-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    opacity: 1;
+    transition: opacity 1s ease-in-out; /* Apply fade-in/out transition */
+}
+
+.hide {
+    opacity: 0;
+}
+
+.mission {
+    text-align: right;
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding-left: 50%;
+    padding-top:1%;
+}
+
+.members {
+    text-align: right;
+    font-size: 18px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding-top:10%;
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #588157;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h1 {
+    padding-bottom: 20%;
+    padding-left: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    color: #000; /* Adjust color as needed */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

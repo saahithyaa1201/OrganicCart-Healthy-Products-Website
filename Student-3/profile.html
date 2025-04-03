@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="userprofile.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>User Profile</title>
+    </head>
+    <body>
+      <header class="header">
+        <div>
+          <img src="logo-r.png" alt="logo" id="logo">
+        </div>
+        <nav class="navbar">
+          <a href="../Student-2/health/home.html" >Home</a>
+          <a href="../Student-2/health/feedback.html">Comments</a>
+          <a href="../Student-1/Health/shop.html">Shop</a>
+          <a href="../Student-4/Gallery.html">Gallery</a>
+          <a href="../Student-3/profile.html" class="active">Quiz</a>
+          <a href="../Student-4/Sitemap.html">Sitemap</a>
+          <a href="../Student-3/team.html">About US</a>
+        </nav>
+      </header>
+      <h1>USER PROFILE</h1>
+     
+      <button id="start" style="text-align: center;">Start</button>
+     
+     
+      <div class="container">
+        <div >
+          <div class="progress">
+            <div class="progress-bar">0%</div>
+          </div>
+          <div id="personal-details" class="step hidden">
+            <h3>Step 1 Personal Details</h3>
+            <p>Name: <span id="name"></span></p>
+            <p>Age: <span id="age"></span></p>
+            <p>Gender: <span id="gender"></span></p>
+            <p>Mobile no: <span id="phoneNo"></span></p>
+            <p>Gmail: <span id="email"></span></p>
+
+            <button id="reset">Reset</button>
+            <button id="next-personal">Next</button>
+          </div>
+          
+        </div>
+       
+       
+        <div id="medical-history" class="step hidden">
+          <h3>Step-2 Medical history: </h3>
+          <p>Any chronic illnesses: <span id="Chronic-illnesses"></span></p>
+          <p>Have you had any surgeries or major medical procedures: <span id="surgeries"></span></p>
+          <p>currently taking any medications: <span id="medications"></span></p>
+
+         
+          <button id="next-medical">Next</button>
+        </div>
+       
+       
+        <div id="lifestyle" class="step hidden">
+          <h3>Step 3 Lifestyle and Habits</h3>
+          <p>How often do you exercise: <span id="exercise"></span></p> 
+          <p>Do you smoke?: <span id="smoke"></span> </p>
+          <p>Do you consume alcohol?: <span id="alcohol"></span></p>
+          <p>How would you rate your diet?: <span id="diet"></span></p>
+
+         
+          <button id="next-lifestyle">Next</button>
+        </div>
+       
+       
+        <div id="mental-health" class="step hidden">
+          <h3>Step - 4 Mental Health</h3>
+          <p>How would you describe your current stress level?: <span id="stress"></span></p>
+          <p>Do you practice any mental health activities?: <span id="activities"></span> </p>
+
+         
+          <button id="finish">Finish</button>
+          <div id="thankyou">
+            <h3>Thank You For Choosing Us :)</h3>
+          </div>
+        </div>
+        
+      </div>
+      <footer>
+        <div class="footer-content">
+                    
+          <h4>Healthy</h4>
+          <h5>Live long life with healthy </h5>
+                    
+          <ul class="socials">
+            <li><a href="#"><i class="fab fa-google"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p>Made by <a href="pageeditor.html" target="_blank">Dharnishan Manoharan</a></p>
+        </div>
+      </footer>
+      
+
+    
+      <script src="user.js"></script>
+        
+    </body>
+</html>

@@ -1,0 +1,43 @@
+body {
+    background-image: url(pictures/back.jpg);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 170vh;
+    margin: 0;
+    
+}
+img.photo{
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+.container {
+    text-align: center;
+}
+
+.topic {
+    background-color: #1c7e9c;
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.topic:hover {
+    background-color: #104454;
+}
+
+.explanation {
+    display: none;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #d3f2fa;
+}

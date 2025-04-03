@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 5rem;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    background-image: url(bgimg.avif);
+    
+    
+}
+
+
+
+.header {
+    height: 15%;
+    background: linear-gradient(to bottom, rgba(103, 127, 216, 0.9), transparent);
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+    padding: 0.5rem 4rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header .logo img {
+    height: 120px;
+}
+
+.header .navbar {
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    width: 100%; /* Take full width */
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.header .navbar a:hover {
+    color: #dbcab4;
+    border-bottom: .1rem solid #d3ad7f;
+    padding-bottom: .5rem;
+}
+
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #4169e1; /* Ensure the sticky header has a background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.main {
+    padding: 1rem;
+    margin-top: 7rem;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.policy-section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+}
+
+.policy-section h2 {
+    color: #4169e1;
+    border-bottom: 2px solid #d3ad7f;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth pop-up effect */
+}
+
+.policy-section ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    display: none; /* Hide by default */
+}
+
+.policy-section ul li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.policy-section ul li strong {
+    color: #000;
+}
+
+.policy-section.active ul {
+    display: block; /* Show when the section is active */
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Pop-up effect for headings */
+.policy-section h2:hover {
+    transform: scale(0.9); /* Scale down the heading */
+}
+
+/* Custom CSS for button layout */
+.content-links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60vh; /* Adjust as needed for positioning */
+  }
+  
+  .content-links .btn {
+	width: 150px;
+	height: 150px;
+	margin: 10px;
+	font-size: 18px;
+  }
+
+/* Example styling for circular content buttons */
+.content-button {
+	width: 150px; /* Adjust width as needed */
+	height: 150px; /* Adjust height as needed */
+	margin: 10px; /* Adjust spacing between buttons */
+	cursor: pointer; /* Change cursor to pointer on hover */
+	border-radius: 0;  
+  }
+  
+
+  .btn-custom {
+    width: 100%; /* Full width of the parent container (col-md-3) */
+    max-width: 200px; /* Maximum width for the buttons */
+    margin: 0 auto; /* Center align the buttons within the column */
+    display: block; /* Make sure the buttons take the full width defined above */
+  }
+
+  footer {
+    background: #36a1e9c9;
+ 
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    padding-bottom: 20px;
+    color: #fff;
+    margin-top: auto;
+    position: relative;
+    z-index: 2;
+}
+
+footer h5 {
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+	padding-bottom: 20px;
+}
+
+.footer-content h4 {
+    letter-spacing: 7px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+	margin: 10px 0;
+}
+
+.footer-content h5 {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 20px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0  0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+    transition: color 0.4s ease;
+}
+
+.socials a:hover i {
+    color: aqua;
+}
+
+.footer-bottom {
+    background: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+}
+
+.footer-bottom a {
+    font-weight: 200;
+    color: #fff;
+}
+
+.footer-bottom a:hover {
+    color: aqua;
+}
+  

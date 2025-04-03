@@ -1,0 +1,33 @@
+body{
+    background-color:rgb(255, 255, 255) ;
+}
+h3{
+    color: #000;
+}
+
+.about,.details{
+    text-align: center;
+
+}
+section{
+    margin-bottom: 50px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(231, 242, 245);
+    box-shadow: 0 2px 3px black;
+}
+.links{
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+
+}
+a:hover{
+    text-decoration: wavy;
+}
+li{
+    display: inline;
+    padding: 5px;
+}
